@@ -4,6 +4,7 @@ import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import AdjustIcon from '@mui/icons-material/Adjust';
 
+
 function SideBar() {
   return (
     <div className='sidebar'>
@@ -20,13 +21,13 @@ function SideBar() {
                     < AdjustIcon className='icon' />
                     <span>Centra</span>
                 </li>
+                
                 <li>
                     <PersonOutlineOutlinedIcon className='icon'/>
                     <span>Accounts</span>
                 </li>
             </ul>
         </div>
-        <div className="bottom">color option</div>
     </div>
   )
 }

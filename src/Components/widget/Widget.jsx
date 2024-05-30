@@ -1,45 +1,39 @@
 import React from 'react';
 import './widget.scss';
 
-function Widget({type}) {
-  let data;
-
-  //temp
+function Widget({ type }) {
+  let title, count, unit;
 
   switch (type) {
-    case "PendAccount":
-      data={
-        title : "Pending Account",
-        type : "Account(s)",
-        counter:"3",
-      };
+    case 'PendAccount':
+      title = 'Pending Accounts';
+      count = 3;
+      unit = 'Account(s)';
       break;
-      case "ActiveAccount":
-      data={
-        title : "Active Accounts",
-        type : "Account(s)",
-        counter: 156,
-
-      };
+    case 'ActiveAccount':
+      title = 'Active Accounts';
+      count = 156;
+      unit = 'Account(s)';
       break;
-      case "ActiveCentra":
-      data={
-        title : "Active Centra",
-        type : "Facility(s)",
-        counter: 36,
-
-      };
+    case 'ActiveCentra':
+      title = 'Active Centras';
+      count = 36;
+      unit = 'Facility(s)';
       break;
     default:
-    break;
+      title = '';
+      count = 0;
+      unit = '';
+      break;
   }
+
   return (
     <div className="widget">
       <div className="left">
-        <span className="title">{data.title}</span>
+        <span className="title">{title}</span>
         <div className="bottom">
-          <span className="counter">{data.counter}</span>
-          <span className="type">{data.type}</span>
+          <span className="counter">{count}</span>
+          <span className="type">{unit}</span>
         </div>
       </div>
     </div>
