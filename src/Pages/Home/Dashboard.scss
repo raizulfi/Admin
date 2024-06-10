@@ -1,12 +1,14 @@
 .home{
     display: flex;
     .homeContainer{
-        flex:6;
 
         .widgets{
-            display: flex;
             padding: 20px;
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
+            width: 100%;
 
         }
         .welcomewidget{

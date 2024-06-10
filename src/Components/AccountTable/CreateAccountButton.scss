@@ -1,0 +1,19 @@
+.createAccountButton {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50px; /* Makes the button cylindrical */
+    font-family: var(--font-helvetica-neue);
+    margin-left: 20px;
+    text-transform: none;
+  
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1); /* Slight background change on hover */
+      border-color: black;
+    }
+  
+    .MuiButton-startIcon {
+      color: black; /* Makes the icon color black */
+    }
+  }
+  

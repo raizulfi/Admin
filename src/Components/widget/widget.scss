@@ -1,18 +1,15 @@
 .widget {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; 
   justify-content: space-between;
   flex: 1;
   padding: 20px;
   background-color: #04315b;
   border-radius: 10px;
   color: #faf9f6;
-  height: 120px; // Adjust height if necessary
   width: 100%;
-  max-width: 300px; // Ensure consistent width for widgets
 
-  .left {
-    display: flex;
+  .left { 
     flex-direction: column;
     flex: 1;
 
@@ -20,20 +17,26 @@
       font-size: 16px;
       margin-bottom: 10px;
     }
-
     .bottom {
       display: flex;
       align-items: center;
 
       .counter {
-        font-size: 24px;
-        font-weight: bold;
-        margin-right: 10px;
+        display: flex;
+        font-size: 45px;
+        color: #faf9f6;
+        text-align: left;
+        font-weight: 600;
+        margin: auto 0px 0px 21px;
       }
 
       .type {
-        font-size: 18px;
-        font-weight: 500;
+        width: 324px;
+        font-size: 32px;
+        display: flex;
+        color: #faf9f6;
+        text-align: left;
+        margin: auto 0px 0px 21px;
       }
     }
   }

@@ -1,17 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import Dashboard from './Pages/Home/Dashboard.jsx'
-import Account from './Pages/Account/Account.jsx' 
-import Centra from './Pages/Centra/Centra.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import MainPage from './Pages/MainPage/MainPage'
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/Centra" element={<Centra />} />
-        <Route path="/Account" element={<Account />} /> 
+        <Route path="/Admin" element={<MainPage />} />
       </Routes>
     </Router>
   )

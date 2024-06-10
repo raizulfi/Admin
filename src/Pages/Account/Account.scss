@@ -1,0 +1,30 @@
+.accountPage {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .accountContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .accountTableContainer {
+    margin: 20px;
+  }
+  
+  .accountHeader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .accountTitle {
+    width: 128px;
+    position: relative;
+    font-size: 32px;
+    display: inline-block;
+    font-family: var(--font-helvetica-neue);
+    color: #04315b;
+    text-align: left;
+  }
+  
